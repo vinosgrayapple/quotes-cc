@@ -1,0 +1,11 @@
+{
+  "name": "quotes-cc",
+  "version": "1.0.0",
+  "description": "I make page QUOTES for CodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
