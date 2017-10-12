@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Caveat|Cutive+Mono');
 *
 {
 	padding: 0;
@@ -68,6 +68,7 @@ span
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-top: 70px;
+	/* font-family: 'Cutive Mono', monospace; */
   }
  .fa-spin
  {
