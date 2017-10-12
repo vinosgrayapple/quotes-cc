@@ -56,21 +56,26 @@ html,body
 	font-family: icomoon;
 	font-weight: 300;
 	color: white;
-
+	box-shadow: inset 0 0 1em #27509e, 0 0 1em rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 }
 span 
 {
 	display: block;
-	border-left: 2px solid green;
+	border-left: 4px solid green;
 	padding-left: 15px;	
 }
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-top: 60px;
+	margin-top: 70px;
   }
-
+ .fa-spin
+ {
+	 margin-right: 10px;
+	 /* font-size: 20px */
+ }
 .btn {
 	border: none;
 	font-family: inherit;
@@ -125,8 +130,8 @@ span
 }
 
 .btn-4:active {
-	border-color: hsla(137, 6%, 24%, 0.418);
-	color: #17954c;
+	border-color: inherit;
+	color: #b9c0bc;
 }
 
 .btn-4:hover {
@@ -147,7 +152,7 @@ span
 }
 
 .btn-4:active:before {
-	color: #17954c;
+	color: #b9c0bc;
 }
 .icon-arrow-right:before {
 	content: "\e00d";
@@ -181,46 +186,15 @@ span
 }
 
 
-
-
-
-
-
-
-button[class*="color-"]
-{
-	border: 5px solid rgb(252, 250, 250);
-}
-.color-1 {
-	background: #0e83cd;
+@-webkit-keyframes spinnerRotate {
+	from {
+		-webkit-transform:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+	}
 }
 
-.color-2 {
-	background: #f06060;
-}
 
-.color-3 {
-	background: #fcd04b;
-}
-
-.color-4 {
-	background: #2ecc71;
-}
-
-.color-5 {
-	background: #9e54bd;
-}
-
-.color-6 {
-	background: #4593e3;
-}
-
-.color-7 {
-	background: #2ac56c;
-}
-
-.color-8 {
-	background: #ecf0f1;
-}
 
 
