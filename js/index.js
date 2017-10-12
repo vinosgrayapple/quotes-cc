@@ -1,8 +1,9 @@
-
-
+const continueBtn = document.querySelector('#continue');
+const returnBtn = document.querySelector('#return');
+const randomBtn = document.querySelector('#random');
 const app = document.querySelector('#app');
-document.body.clientWidth = app.clientWidth;
-document.body.clientHeight = app.clientHeight;
+const quote = document.querySelector('.quote');
 
-
-// app.innerText= "Hello";
+continueBtn.addEventListener('click', () => {
+    quote.innerHTML = "Hello" + Math.random()*10;
+});
