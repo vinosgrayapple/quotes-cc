@@ -1,4 +1,8 @@
 
 
 const app = document.querySelector('#app');
-app.innerText= "Hello";
+document.body.clientWidth = app.clientWidth;
+document.body.clientHeight = app.clientHeight;
+
+
+// app.innerText= "Hello";

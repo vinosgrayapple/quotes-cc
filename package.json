@@ -4,7 +4,7 @@
   "description": "My project fot FreeCodeCamp",
   "main": "js/index.js",
   "scripts": {
-    "dev": "budo --live"
+    "dev": "budo js/index.js --live"
   },
   "repository": {
     "type": "git",

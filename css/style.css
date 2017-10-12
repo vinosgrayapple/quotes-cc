@@ -1,0 +1,110 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+
+
+
+html,body
+{
+	color: #fdfcfa;
+	background: rgba(58, 57, 57, 0.877);
+}
+
+
+#app
+{
+	width: 1000px;
+	margin: 0 auto;
+	// height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.quote
+{
+	display: block;
+	width: 100%;
+	// border: 1px solid lightgreen;
+	padding: 20px 35px;
+	font-family: sans-serif;
+
+}
+span 
+{
+	display: block;
+	border-left: 2px solid green;
+	padding-left: 15px;	
+	color: #655;
+}
+
+
+.btn {
+	border: none;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+	font-size: 40px;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button[class*="color-"]
+{
+	border: 5px solid rgb(252, 250, 250);
+}
+.color-1 {
+	background: #0e83cd;
+}
+
+.color-2 {
+	background: #f06060;
+}
+
+.color-3 {
+	background: #fcd04b;
+}
+
+.color-4 {
+	background: #2ecc71;
+}
+
+.color-5 {
+	background: #9e54bd;
+}
+
+.color-6 {
+	background: #4593e3;
+}
+
+.color-7 {
+	background: #2ac56c;
+}
+
+.color-8 {
+	background: #ecf0f1;
+}
+
+
