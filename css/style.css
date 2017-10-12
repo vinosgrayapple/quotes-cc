@@ -4,22 +4,46 @@
 	margin: 0;
 	box-sizing: inherit;
 }
-
-
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
 
 
 html,body
 {
 	color: #fdfcfa;
-	background: rgba(58, 57, 57, 0.877);
+	background:#27509e;
+	font-family: icomoon;
 }
 
 
 #app
 {
 	width: 1000px;
-	margin: 0 auto;
-	// height: 100%;
+	margin: 200px auto;
 	display: flex;
 	flex-direction: column;
 }
@@ -28,9 +52,10 @@ html,body
 {
 	display: block;
 	width: 100%;
-	// border: 1px solid lightgreen;
 	padding: 20px 35px;
-	font-family: sans-serif;
+	font-family: icomoon;
+	font-weight: 300;
+	color: white;
 
 }
 span 
@@ -38,14 +63,18 @@ span
 	display: block;
 	border-left: 2px solid green;
 	padding-left: 15px;	
-	color: #655;
 }
-
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 60px;
+  }
 
 .btn {
 	border: none;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-	font-size: 40px;
+	font-family: inherit;
+	font-size: inherit;
 	color: inherit;
 	background: none;
 	cursor: pointer;
@@ -70,6 +99,93 @@ span
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+/* Button 4 */
+.btn-4 {
+	border-radius: 50px;
+	border: 3px solid #fff;
+	color: #fff;
+	overflow: hidden;
+}
+
+.btn-4:active {
+	border-color: hsla(137, 6%, 24%, 0.418);
+	color: #17954c;
+}
+
+.btn-4:hover {
+	/* background:  #24b662; */
+	/* background: inherit; */
+	/* z-index: -5; */
+}
+
+.btn-4:before {
+	position: absolute;
+	height: 100%;
+	font-size: 125%;
+	line-height: 3.5;
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-4:active:before {
+	color: #17954c;
+}
+.icon-arrow-right:before {
+	content: "\e00d";
+}
+
+.icon-arrow-left:before {
+	content: "\e003";
+}
+
+/* Button 4cl */
+.btn-4cl:before {
+	left: 30%;
+	opacity: 0;
+	top: 0;
+}
+
+.btn-4cl:hover:before {
+	left: 15%;
+	opacity: 1;
+}
+/* Button 4cr */
+.btn-4cr:before {
+	left: 60%;
+	opacity: 0;
+	top: 0;
+}
+
+.btn-4cr:hover:before {
+	left: 79%;
+	opacity: 1;
+}
+
+
+
+
+
+
+
 
 button[class*="color-"]
 {
