@@ -1,0 +1,27 @@
+{
+  "name": "quotes-cc",
+  "version": "1.0.0",
+  "description": "My project fot FreeCodeCamp",
+  "main": "js/index.js",
+  "scripts": {
+    "dev": "budo --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinosgrayapple/quotes-cc.git"
+  },
+  "keywords": [
+    "lesson"
+  ],
+  "author": "Sethii Komarychev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinosgrayapple/quotes-cc/issues"
+  },
+  "homepage": "https://github.com/vinosgrayapple/quotes-cc#readme",
+  "devDependencies": {
+    "budo": "^10.0.4",
+    "fs": "0.0.1-security",
+    "nodemon": "^1.12.1"
+  }
+}
